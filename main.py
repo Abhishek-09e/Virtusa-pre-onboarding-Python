@@ -30,10 +30,10 @@ def add_expense():
     }
     expenses.append(expense)
     save_data()
-    print("✅ Expense added successfully!")
+    print("Expense added successfully!")
 
 def view_expenses():
-    print("\n--- All Expenses ---")
+    print("\n-- All Expenses ---")
     if not expenses:
         print("No expenses found.")
         return
@@ -67,7 +67,6 @@ def category_breakdown():
 
     for cat, amt in category_totals.items():
         print(f"{cat}: ₹{amt}")
-
 
 def highest_category():
     print("\n--- Highest Spending Category ---")
